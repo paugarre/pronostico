@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-body{
+body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0; /* Cambiar el fondo del body a un gris claro */
+    margin: 0; /* Eliminar los márgenes predeterminados del body */
+}
+
+/* Estilos para elementos fuera del contenedor .weather-content */
+/* Por ejemplo, el encabezado y el pie de página */
+header, footer {
+    background-color: #333; /* Cambiar el fondo del encabezado y el pie de página a un gris oscuro */
+    color: #cfcfcf; /* Cambiar el color del texto a un gris claro */
+    padding: 20px; /* Agregar relleno para mejorar la legibilidad */
 }
 .weather-content {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -8,16 +18,22 @@ body{
     text-align: center;
     padding: 20px 20px 50px;
     margin: 10% auto 0;
-    background-color: #546785;
-    border-radius: 9px;
+    background-color: #92b38b; /* Cambiar el fondo a un verde opaco */
+    border-radius: 50px;
 }
 .weather-content h1{
     font-size: 34px;
     margin-bottom: 10px;
-    color: #FFF;
+    color: #333; /* Cambiar el color del encabezado a un gris oscuro */
+}
+
+.weather-content h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333; /* Cambiar el color del subencabezado a un gris oscuro */
 }
 .weather-content p{
-    color: #cfcfd9;
+    color: #555; /* Cambiar el color del texto a un gris más oscuro */
 }
 .result{
     margin-bottom: 8%;
@@ -29,12 +45,12 @@ body{
     font-size: 70px;
     line-height: 70px;
     margin: -10px 0 10px;
-    color: #fff;
+    color: #333; /* Cambiar el color del título a un gris oscuro */
 }
 .result h5{
     font-size: 21px;
     margin: 2px;
-    color: #fff;
+    color: #333; /* Cambiar el color del subtitulo a un gris oscuro */
 }
 form {
     display: flex;
@@ -46,7 +62,7 @@ form input[type="text"], form input[type="submit"], form select{
     display: inline-block;
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
+    border-radius: 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -60,9 +76,9 @@ form input[type="submit"]{
     width: 100%;
     margin: 0 auto;
     cursor: pointer;
-    background-color: #14d4a5;
-    border: 1px solid #14d4a5;
-    color: #fff;
+    background-color: #92b38b; /* Cambiar el color del botón a un verde opaco */
+    border: 1px solid #124b3c;
+    color: #333; /* Cambiar el color del texto del botón a un gris oscuro */
     font-weight: 600;
     transition: width 1s;
 }
@@ -71,5 +87,5 @@ form input[type="submit"]:hover{
 }
 .alert-message {
     margin: 24px 0 0;
-    color: red!important;
+    color: #ff0000 !important; /* Cambiar el color del mensaje de alerta a rojo */
 }
