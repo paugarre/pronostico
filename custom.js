@@ -34,10 +34,6 @@ function callAPI(city){
         })
 }
 
-// Rest of your functions (showWeather, showError, kelvinToCentigrade, clearHTML) remain the same.
-
-
-
 
 function showWeather(data){
     const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
